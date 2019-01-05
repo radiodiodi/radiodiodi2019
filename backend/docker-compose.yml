@@ -1,8 +1,8 @@
 version: '2'
 services:
-    radiodiodi2018:
+    radiodiodi2019:
         build: .
-        container_name: "radiodiodi2018"
+        container_name: "radiodiodi2019"
         environment:
             - NODE_ENV=development
         volumes:
