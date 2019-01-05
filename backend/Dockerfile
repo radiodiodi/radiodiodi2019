@@ -1,9 +1,15 @@
-FROM node:9.3.0
+FROM node
 
-RUN mkdir /app
-ADD package.json /app/package.json
-ADD yarn.lock /app/yarn.lock
 WORKDIR /app
+EXPOSE 8080
+EXPOSE 9090
+ENV PORT=8080
+ENV WS_PORT=9090
+ENV HOST=0.0.0.0
 
-# Install yarn
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY src src
+COPY resource resource
+COPY .env .env
+CMD ["npm", "start"]
