@@ -5,7 +5,8 @@ services:
     build: ./frontend
     container_name: "radiodiodi2019_frontend"
     volumes:
-      - ./frontend:/app
+      - ./frontend/src:/app/src
+      - ./frontend/.env:/app/.env
     ports:
       - 3000:3000
 
@@ -15,7 +16,9 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./backend:/app
+      - ./backend/src:/app/src
+      - ./backend/resource:/app/resource
+      - ./backend/.env:/app/.env
     ports:
       - 8080:8080
     links:
