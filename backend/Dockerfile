@@ -8,7 +8,7 @@ ENV WS_PORT=9090
 ENV HOST=0.0.0.0
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm i
 COPY src src
 COPY resource resource
 COPY .env .env
