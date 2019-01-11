@@ -11,6 +11,7 @@ const app = new Koa();
 app.use(koaBody());
 
 const { FRONTEND_URL } = process.env;
+const { CALENDAR_ID } = process.env;
 
 // x-response-time
 app.use(async (ctx, next) => {
@@ -34,6 +35,7 @@ app.use(async (ctx, next) => {
 
 websockets.start();
 
+utils.info(`Using calendar ID ${CALENDAR_ID}`);
 utils.info(`Listening for HTTP on ${process.env.HOST} on port ${process.env.PORT}.`);
 
 app

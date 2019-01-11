@@ -15,7 +15,7 @@ const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
 const TOKEN_DIR = `${process.env.HOME || process.env.HOMEPATH ||
   process.env.USERPROFILE}/.credentials/`;
 const TOKEN_PATH = `${TOKEN_DIR}radiodiodi-calendar-credentials.json`;
-const CALENDAR_ID = 'radiodiodi.fi_9g8tojuhcb2dgj82l51sr09jno%40group.calendar.google.com';
+const { CALENDAR_ID } = process.env;
 const START_DATE = new Date(Date.parse('2019-04-12T00:00:00.000+03:00'));
 const END_DATE = new Date(Date.parse('2019-05-01T00:00:00.000+03:00'));
 const CALENDAR_INTERVAL = 1000 * 60 * 15; // 15 minutes
@@ -48,8 +48,13 @@ function storeToken(token) {
       throw err;
     }
   }
-  fs.writeFile(TOKEN_PATH, JSON.stringify(token));
-  console.log(`Token stored to ${TOKEN_PATH}`);
+  fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err, res) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`Token stored to ${TOKEN_PATH}`);
+    }
+  });
 }
 
 /**
