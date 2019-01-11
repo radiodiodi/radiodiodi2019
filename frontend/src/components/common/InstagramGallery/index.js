@@ -8,15 +8,14 @@ import { shortenText } from '../../../utils'
 
 const Card = styled.a`
   align-self: flex-start;
-  text-decoration: none;
   margin: 0.5rem;
 
   margin-left: ${p => p.error ? 'auto' : ''};
   margin-right: ${p => p.error ? 'auto' : ''};
 
   padding: 0.5rem;
-  background-color: ${p => p.theme.color.blue};
   width: calc(100% - 2rem);
+  border-top: 2px solid ${p => p.theme.color.blue100};
 
   @media screen and (min-width: 600px) {
     width: calc((100% - 4rem) / 2);
@@ -35,7 +34,6 @@ const Image = styled(FadeImage) `
 const Caption = styled.div`
   text-overflow: ellipsis;
   width: 100%;
-  color: ${p => p.theme.color.white};
 `;
 
 const Text = styled.span`

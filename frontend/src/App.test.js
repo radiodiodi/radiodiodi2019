@@ -16,8 +16,8 @@ it('renders without crashing', () => {
     title: 'test', artist: 'test', duration: 100,
   });
   fetchMock.get(`begin:${process.env.REACT_APP_BACKEND_HTTP_URL}/now_playing`, {
-    title: 'test', description: 'test', start: '2018-04-16T17:00:00+03:00', 
-    end: '2018-04-16T19:00:00+03:00', team: 'PLK', genre: '', image: 'peltiradio.jpg',
+    title: 'test', description: 'test', start: '2019-04-16T17:00:00+03:00', 
+    end: '2019-04-16T19:00:00+03:00', team: 'PLK', genre: '', image: 'peltiradio.jpg',
   });
 
   const div = document.createElement('div');

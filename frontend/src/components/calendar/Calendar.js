@@ -8,8 +8,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const Button = styled.button`
-  background-color: ${p => p.theme.color.yellow};
-  color: ${p => p.theme.color.dark};
+  background-color: ${p => p.theme.color.pink75};
+  color: ${p => p.theme.color.white100};
   padding: 0.5rem;
   font-size: 14px;
   border: none;
@@ -35,7 +35,6 @@ const Controls = styled.div`
 `;
 
 const CalendarLink = styled.div`
-  color: ${p => p.theme.color.white};
   text-align: center;
 `;
 
@@ -115,7 +114,7 @@ class Calendar extends React.Component {
     const dayOfTheWeek = weekdays[(today - 16) % 7];
     const calendarControls = <Controls>
       <Button onClick={this.decrementDay}>{trans.previous}</Button>
-      <span>{dayOfTheWeek} {today}.4.2018</span>
+      <span>{dayOfTheWeek} {today}.4.2019</span>
       <Button onClick={this.incrementDay}>{trans.next}</Button>
     </Controls>
     if (!ready) return null;

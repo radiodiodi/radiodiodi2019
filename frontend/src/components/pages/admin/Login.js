@@ -12,20 +12,16 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  color: ${p => p.theme.color.white};
 `;
 
 const Login = styled(GoogleLogin)`
   padding: 1rem;
   margin: 1rem;
-  background-color: ${p => p.theme.color.white};
-  font-family: 'Comfortaa';
   font-size: 1rem;
 `;
 
 const Error = styled.i`
-  color: ${p => p.theme.color.yellow};
+  color: ${p => p.theme.color.pink100};
   margin: 1rem 0;
 `;
 

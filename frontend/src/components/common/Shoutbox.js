@@ -10,9 +10,6 @@ const WS_URL = process.env.REACT_APP_BACKEND_WS_URL;
 const MAX_MESSAGES = 100;
 
 const Container = styled.div`
-  background-color: ${p => p.theme.color.blue};
-  color: ${p => p.theme.color.white};
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,8 +29,7 @@ const Log = styled.div`
 const Row = styled.div`
   padding: 0.2rem;
   font-size: 1rem;
-  ${ p => p.error && 'color: red'};
-  font-family: 'Jaldi', sans-serif;
+  ${ p => p.error && `color: ${ p => p.theme.color.pink100 }` };
   display: flex;
   align-items: flex-start;
 `;
@@ -47,8 +43,6 @@ const InputContainer = styled.div`
 
 const SendButton = styled.a`
   padding: 0.5rem;
-  background-color: ${p => p.theme.color.pink};
-  color: ${p => p.theme.color.blue};
   margin: 0.5rem;
   cursor: pointer;
 `;
@@ -79,7 +73,6 @@ const Verified = styled.img`
 const Timestamp = styled.div`
   white-space: nowrap;
   margin-right: 0.3rem;
-  color: ${p => p.theme.color.pink};
 
   display: flex;
   justify-content: space-between;
@@ -90,7 +83,6 @@ const RowText = styled.span`
 `;
 
 const RowUser = styled.span`
-  color: ${p => p.theme.color.yellow};
   white-space: pre;
   &:after {
     content: ': ';
@@ -126,7 +118,7 @@ class Shoutbox extends Component {
       if (log.length > MAX_MESSAGES) {
         log.splice(0, 1);
       }
-  
+
       this.setState({
         log,
       });
@@ -180,7 +172,7 @@ class Shoutbox extends Component {
   }
 
   renderRows = rows => {
-    return rows.map((row, index) => 
+    return rows.map((row, index) =>
       <Row error={row.error} key={index}>
         <Block>
           <Timestamp>
@@ -248,14 +240,14 @@ class Shoutbox extends Component {
         </Log>
 
         <InputContainer>
-          <Username 
-            placeholder={trans.username} 
+          <Username
+            placeholder={trans.username}
             innerRef={ input => { this.username = input } } />
-          <Prompt 
-            placeholder={trans.messageplaceholder} 
-            onKeyPress={this.onPromptKeyPress} 
+          <Prompt
+            placeholder={trans.messageplaceholder}
+            onKeyPress={this.onPromptKeyPress}
             innerRef={ input => { this.prompt = input } } />
-          <SendButton 
+          <SendButton
             onClick={this.sendMessage}>{trans.send}</SendButton>
         </InputContainer>
       </Container>

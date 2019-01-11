@@ -20,7 +20,6 @@ const Container = styled.div`
 
 const Paragraph = styled.div`
   margin: 0;
-  color: ${p => p.theme.color.white};
   @media screen and (max-width: 800px) {
     max-width: 100%;
   }
@@ -50,7 +49,7 @@ const ColumnContainer = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.h3`
+const Title = styled.h2`
   margin: 0;
 `;
 
@@ -59,7 +58,6 @@ const ContentRow = styled.div`
   margin: 2rem 0;
   border-top: solid;
   border-width: 2px;
-  border-color: ${p => p.theme.color.pink};
 
   @media screen and (max-width: 800px) {
     margin-top: 2rem;
@@ -69,7 +67,6 @@ const ContentRow = styled.div`
 const ShoutboxTitle = styled.h4`
   margin: 2rem 0 1rem;
   font-size: 1.5rem;
-  color: ${p => p.theme.color.white};
 `;
 
 class Frontpage extends Component {
@@ -83,15 +80,15 @@ class Frontpage extends Component {
 
     return (
       <Fragment>
-        {/* <CountdownSection /> */}
+        <CountdownSection />
         <Container>
-          {/* <ColumnContainer ontop> */}
-            {/* <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle> */}
-            {/* <Shoutbox /> */}
-            {/* <Title>{trans.otasuunnistusheading}</Title> */}
-            {/* <Paragraph2 dangerouslySetInnerHTML={{ __html: trans.otasuunnistuspromo }} /> */}
-          {/* </ColumnContainer> */}
-          {/* <ColumnContainer>
+          <ColumnContainer ontop>
+            <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle>
+            <Shoutbox />
+            <Title>{trans.otasuunnistusheading}</Title>
+            <Paragraph2 dangerouslySetInnerHTML={{ __html: trans.otasuunnistuspromo }} />
+          </ColumnContainer>
+          <ColumnContainer>
             <Paragraph margin>
               <Calendar oneDayPreview />
               <Title>{trans.whatisheading}</Title>
@@ -99,16 +96,16 @@ class Frontpage extends Component {
             </Paragraph>
             <SponsorReel interval={sponsorInterval} />
             <Player />
-          </ColumnContainer> */}
+          </ColumnContainer>
         </Container>
-        {/* <Calendar /> */}
+        <Calendar />
         <ContentRow>
           <Title>{trans.recruitheading}</Title>
           <Paragraph2 dangerouslySetInnerHTML={{__html: trans.recruitparagraph1}} />
         </ContentRow>
-        {/* <ContentRow>
+        <ContentRow>
           <ImageGallery />
-        </ContentRow> */}
+        </ContentRow>
         <Instagram />
       </Fragment>
     );

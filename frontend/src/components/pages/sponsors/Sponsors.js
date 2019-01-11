@@ -17,12 +17,10 @@ const Source = styled.p`
 `;
 
 const Paragraph = styled.p`
-  color: ${p => p.theme.color.white};
   text-align: ${p => p.centered ? 'center' : 'left'};
 `;
 
 const List = styled.ul`
-  color: ${p => p.theme.color.white};
 `;
 
 const ColumnContainer = styled.div`
@@ -40,7 +38,6 @@ const Column = styled.span`
 `;
 
 const Link = styled.a`
-  color: ${p => p.theme.color.white};
 `;
 
 const Title = styled.h2`
@@ -90,7 +87,6 @@ const AudioPlayerLabel = styled.label`
 `;
 
 const ContrastBox = styled.div`
-  background-color: ${p => p.theme.color.blue};
   padding: 0.5rem;
   margin: 2rem 0 1rem;
 `;

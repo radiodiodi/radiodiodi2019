@@ -7,9 +7,7 @@ import playIcon from '../../svg/play.svg';
 import pauseIcon from '../../svg/pause.svg';
 
 const Container = styled.div`
-  background-color: ${p => p.theme.color.blue};
   padding: 1rem;
-  color: ${p => p.theme.color.white};
 
   @media screen and (max-width: 800px) {
     margin: 1rem 0 1rem;
@@ -34,7 +32,6 @@ const Line = styled.div`
 
 const Header = styled.h4`
   font-size: 18px;
-  color: ${p => p.theme.color.pink};
   border-bottom: 1px solid ${p => p.theme.color.pink};
   margin: 0 0 0.5rem 0;
 `;
@@ -54,7 +51,6 @@ const NowPlayingValue = styled.i`
 
 const OwnPlayer = styled.div`
   margin-top: 1rem;
-  color: ${p => p.theme.color.white};
 `;
 
 class Player extends Component {

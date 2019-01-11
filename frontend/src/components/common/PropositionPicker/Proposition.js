@@ -6,7 +6,6 @@ import TimePicker from './TimePicker';
 import cross from '../../../images/cross.png';
 
 const PropositionRow = styled.span`
-  background-color: ${p => p.theme.color.pink};
   padding: 0.5rem;
   margin-bottom: 1rem;
 
@@ -60,7 +59,7 @@ class Proposition extends Component {
   }
 
   onDateSelect(date) {
-    const d = `${date}.04.2018`;
+    const d = `${date}.04.2019`;
     const { handler, id, startTime, endTime } = this.props;
     this.setState({
       showCalendar: false,

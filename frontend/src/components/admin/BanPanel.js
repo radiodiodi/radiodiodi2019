@@ -4,7 +4,6 @@ import ReactModal from 'react-modal';
 import { liftBan } from '../../utils';
 
 const Container = styled.div`
-  background-color: ${p => p.theme.color.contrast};
   padding: 0.5rem;
   margin-bottom: 2rem;
 `;
@@ -28,11 +27,11 @@ const Button = styled.button`
   @media screen and (max-width: 400px) {
     margin: 0 0;
   }
-  background-color: ${p => p.theme.color.pink};
+
+  background-color: ${p => p.theme.color.blue50};
   padding: 1rem;
   border: 0px;
   font-size: 1rem;
-  font-family: 'Comfortaa';
   cursor: pointer;
 `;
 
@@ -49,7 +48,6 @@ const Modal = styled(ReactModal)`
   margin: auto;
   padding: 1rem;
   margin-top: calc(50vh - 0.5 * 400px);
-  background-color: ${p => p.theme.color.dark};
 
   display: flex;
   flex-direction: column;
@@ -59,7 +57,6 @@ const Modal = styled(ReactModal)`
 const ModalContent = styled.div`
   flex: 1;
   margin-bottom: 2rem;
-  color: ${p => p.theme.color.white};
   text-align: center;
 `;
 

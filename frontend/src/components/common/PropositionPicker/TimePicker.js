@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 const Widget = styled.select`
   padding: 0.5rem 1rem;
-  background-color: ${p => p.theme.color.white};
-  color: ${p => p.theme.color.dark};
   user-select: none;
   font-family: monospace;
   font-size: 1rem;

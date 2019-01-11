@@ -25,7 +25,6 @@ const Column = styled.div`
   }
 
   max-width: 100%;
-  color: ${p => p.theme.color.white};
 `;
 
 const Log = styled.div`
@@ -33,7 +32,6 @@ const Log = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
 
-  border: 1px solid ${p => p.theme.color.white};
   margin-bottom: 2rem;
 `;
 

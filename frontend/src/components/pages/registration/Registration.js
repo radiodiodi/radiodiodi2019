@@ -13,7 +13,6 @@ const Container = styled.div`
 `;
 
 const Paragraph = styled.div`
-  color: ${p => p.theme.color.white};
   max-width: 800px;
   margin: auto;
   flex-grow: 1;

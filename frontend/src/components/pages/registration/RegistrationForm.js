@@ -16,12 +16,10 @@ import {
 } from '../../common/Form';
 
 const ResponseMessage = styled.h4`
-  color: ${p => p.theme.color.pink};
   margin-bottom: 1rem;
-`
+`;
 
 const Link = styled.a`
-  color: ${p => p.theme.color.pink};
 `;
 
 export default class RegistrationForm extends Component {

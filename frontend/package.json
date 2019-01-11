@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^7.12.3",
     "fetch-mock": "^7.3.0",
     "mock-socket": "^8.0.5",
-    "stylelint-config-recommended": "^2.1.0"
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1"
   }
 }

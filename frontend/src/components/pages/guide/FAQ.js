@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const Container = styled.div`
   padding: 0.5rem;
-  color: ${p => p.theme.color.white};
 `;
 
 const Question = styled.i`
@@ -17,14 +16,13 @@ const Question = styled.i`
 `;
 
 const Answer = styled.div`
-  background-color: ${p => p.theme.color.blue};
   padding: 1rem;
 `;
 
 const qas = trans => [
   {
     question: 'Mikä on Radiodiodi?',
-    answer: 'Radiodiodi on Otaniemestä ponnistava joka vuosi täysin opiskelijavetoisesti toteutettu kaupallinen wappuradio. Radio toteutetaan vuonna 2018 jo seitsemättä kertaa ja lähetys on käynnissä täydet kaksi viikkoa ennen Wappuaattoa. Projektiin osallistuu joka vuosi satoja vapaaehtoisia taustatyön muodossa ja ohjelmaakin tulee vuosittain tekemään kahden lähetysviikon aikana yli 100 vapaaehtoista. Radiota kuuntelee lähetyksen aikana koko pääkaupunkiseutu ja verkossa koko Suomi!'
+    answer: 'Radiodiodi on Otaniemestä ponnistava joka vuosi täysin opiskelijavetoisesti toteutettu kaupallinen wappuradio. Radio toteutetaan vuonna 2019 jo kahdeksatta kertaa ja lähetys on käynnissä täydet kaksi viikkoa ennen Wappuaattoa. Projektiin osallistuu joka vuosi satoja vapaaehtoisia taustatyön muodossa ja ohjelmaakin tulee vuosittain tekemään kahden lähetysviikon aikana yli 100 vapaaehtoista. Radiota kuuntelee lähetyksen aikana koko pääkaupunkiseutu ja verkossa koko Suomi!'
   },
   // {
   //   question: 'Missä Radiodiodi kuuluu?',

@@ -3,43 +3,20 @@ import React, { Component } from 'react';
 import { Link as ReactLink } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
-const LinkMixin = (p) => `
-  text-decoration: none;
-  color: ${p.theme.color.white};
-
-  &:visited {
-    color: ${p.theme.color.white};
-  }
-
-  margin: 0.5rem;
-  @media screen and (min-width: 800px) {
-    margin: 0 2rem 0 0;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
+const Link = styled(ReactLink)`
+    margin-right: 1rem;
 `;
 
 const Rectangle = styled.div`
-  background-color: ${p => p.theme.color.blue};
   margin-bottom: 2rem;
   padding: 1rem 2rem 1rem;
 `;
 
-const Link = styled(ReactLink)`
-  ${ p => LinkMixin(p) }
-`;
-
 const Language = styled.a`
-  ${ p => LinkMixin(p) }
   @media screen and (min-width: 800px) {
     margin-left: auto;
     margin-right: 0;
   }
-
-  color: ${p => p.theme.color.pink};
-  cursor: pointer;
 `;
 
 const BurgerButton = styled.div`
@@ -96,10 +73,10 @@ class Navigation extends Component {
         </BurgerButton>
         <Menu expanded={expanded}>
           <Link to="/">{trans.frontpage}</Link>
-          { false && <Link to="/ilmo">{trans.registration}</Link> }
+          <Link to="/ilmo">{trans.registration}</Link>
           <Link to="/guide">{trans.oto}</Link>
-          {/* <Link to="/sponsors">{trans.forbusinesses}</Link> */}
-          {/* <Link to="/library">{trans.musiclibrary}</Link> */}
+          <Link to="/sponsors">{trans.forbusinesses}</Link>
+          <Link to="/library">{trans.musiclibrary}</Link>
           <Language onClick={changeLanguage}>{trans.changelang}</Language>
         </Menu>
       </Rectangle>

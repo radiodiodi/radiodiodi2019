@@ -25,7 +25,6 @@ const ReelImage = styled(FadeImage)`
 
 const Title = styled.small`
   text-align: center;
-  color: ${p => p.theme.color.white};
   margin: 3rem 0.5rem 0.5rem;
 `;
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background-color: ${p => p.theme.color.contrast};
   padding: 0.5rem;
   margin-bottom: 2rem;
 `;

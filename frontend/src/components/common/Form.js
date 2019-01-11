@@ -12,10 +12,9 @@ const Text = styled.div`
   padding: 10px;
   margin-bottom: 1rem;
   vertical-align: top;
-  
+
   input:not([type='radio']):not([type='checkbox']),
   textarea {
-    background-color: ${p => p.theme.color.white};
     padding: 10px;
     border-radius: 5px;
     width: 100%;
@@ -27,7 +26,6 @@ const Text = styled.div`
 
 const Label = styled.label`
   display: block;
-  color: #ccc;
   font-size: 0.9rem;
 `;
 
@@ -35,8 +33,6 @@ const Button = styled.input`
   padding: 1rem;
   margin: 1rem 0 2rem;
   width: 100%;
-  background-color: ${p => p.theme.color.pink};
-  font-family: 'Comfortaa';
   font-size: 1rem;
   border: 0;
 `;
@@ -49,9 +45,8 @@ const Radio = styled.div`
 `;
 
 export const ErrorLabel = styled.p`
-  color: ${p => p.theme.color.yellow};
   text-align: center;
-`
+`;
 
 export function TextInput({ id, label, type = 'text', req, handler, ...others }) {
   return (

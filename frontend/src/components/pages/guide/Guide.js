@@ -11,30 +11,11 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const LinkMixin = (p) => `
-  text-decoration: none;
-  color: ${p.theme.color.pink};
-
-  &:visited {
-    color: ${p.theme.color.pink};
-  }
-
-  margin: 0.5rem;
-  @media screen and (min-width: 800px) {
-    margin: 0 2rem 0 0;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
 const Link = styled(ReactLink)`
-  ${ p => LinkMixin(p) }
+  margin-right: 1rem;
 `;
 
 const Rectangle = styled.div`
-  background-color: ${p => p.theme.color.blue};
   padding: 1rem 2rem 1rem;
 `;
 

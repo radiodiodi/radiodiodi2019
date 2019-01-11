@@ -6,8 +6,6 @@ import PropTypes from 'prop-types';
 import dateFormat from 'dateformat';
 
 const ProgramBlock = styled.div`
-  background-color: ${p => p.theme.color.blue};
-  color: ${p => p.theme.color.white};
   padding: 1rem;
   min-height: ${p => p.maintainance ? 'none' : '150px'};
   &::after {
@@ -53,7 +51,6 @@ const ImagePlaceholder = styled.div`
 const Img = ImagePlaceholder.withComponent('img')
 
 const Title = styled.h4`
-  color: ${p => p.theme.color.pink};
   margin: 0.5rem 0;
   font-size: 18px;
   border-bottom: 1px solid ${p => p.theme.color.pink};
@@ -64,7 +61,6 @@ const Title = styled.h4`
 `;
 
 const Genre = styled.small`
-  color: ${p => p.theme.color.yellow};
 `;
 
 const Author = styled.p`
@@ -82,7 +78,6 @@ const Paragraph = styled.p`
 const ShowMore = styled.span`
   cursor: pointer;
   font-size: 12px;
-  color: ${p => p.theme.color.yellow};
   padding: 0 0;
 `;
 

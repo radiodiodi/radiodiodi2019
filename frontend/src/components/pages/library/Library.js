@@ -10,7 +10,6 @@ const Results = styled.div`
 `;
 
 const Result = styled.div`
-  background-color: ${p => p.theme.color.blue};
   padding: 0.5rem;
   margin: 0.2rem 0;
 
@@ -19,13 +18,11 @@ const Result = styled.div`
   @media screen and (max-width: 800px) {
     flex-direction: column;
   }
-
-  color: ${p => p.white ? p.theme.color.white : p.theme.color.pink};
 `;
 
 const Error = styled.h2`
   text-align: center;
-  color: ${p => p.theme.color.yellow};
+  color: ${p => p.theme.color.pink100};
 `;
 
 const Column = styled.div`
@@ -48,8 +45,6 @@ const SearchContainer = styled.div`
 
 const SearchButton = styled.a`
   padding: 0.5rem;
-  background-color: ${p => p.theme.color.white};
-  color: ${p => p.theme.color.dark};
   min-width: 5rem;
   text-align: center;
   cursor: pointer;
@@ -62,7 +57,6 @@ const TypePickerContainer = styled.div`
 `;
 
 const TypeLabel = styled.label`
-  color: ${p => p.theme.color.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +72,6 @@ const AnnouncementBox = styled.div`
   margin-bottom: 2rem;
   border-bottom: solid;
   border-width: 2px;
-  border-color: ${p => p.theme.color.pink};
 
   @media screen and (max-width: 800px) {
     margin-top: 2rem;

@@ -9,7 +9,6 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  background-color: ${p => p.theme.color.white};
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -17,13 +16,10 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled.h4`
-  color: ${p => p.theme.color.dark};
   margin: 0;
 `;
 
-const DateContainer = styled.div`
-
-`;
+const DateContainer = styled.div``;
 
 const Date = styled.div`
   cursor: pointer;

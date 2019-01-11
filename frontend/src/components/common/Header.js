@@ -14,7 +14,7 @@ const HeaderContainer = styled.header`
 
   border-bottom: solid;
   border-width: 4px;
-  border-color: ${p => p.theme.color.pink};
+  border-color: ${p => p.theme.color.pink50};
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -36,7 +36,7 @@ const SocialMediaButton = styled.i`
 `;
 
 const SocialMediaLink = styled.a`
-  color: ${p => p.theme.color.pink};
+  color: ${p => p.theme.color.blue75};
   margin: 0 0.5rem 0;
 `;
 

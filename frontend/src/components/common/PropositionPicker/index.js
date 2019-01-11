@@ -16,9 +16,6 @@ const AddButtonRow = styled.span`
   display: flex;
   align-items: flex-start;
   cursor: pointer;
-  &:hover {
-    color: ${p => p.theme.color.yellow};
-  }
 `;
 
 class PropositionPicker extends Component {

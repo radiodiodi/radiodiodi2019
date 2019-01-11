@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const SectionContainer = styled.div`
   text-align: center;
-  border-color: ${p => p.theme.color.pink};
+  border-color: ${p => p.theme.color.pink50};
 
   @media screen and (max-width: 800px) {
     margin-top: 2rem;
@@ -16,15 +16,12 @@ const MonospaceSpan = styled.span`
   display: inline-block;
   font-size: 1.5rem;
   font-weight: bold;
-  color: ${p => p.theme.color.yellow};
 `;
 
 const Header = styled.h2`
-  color: ${p => p.theme.color.white};
 `;
 
 const Subheader = styled.h4`
-  color: ${p => p.theme.color.white};
 `;
 
 class CountdownSection extends Component {

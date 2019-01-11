@@ -11,7 +11,6 @@ import aajii from '../../../images/aajii.jpg';
 import eero from '../../../images/eero.jpg';
 
 const Gallery = styled.section`
-  color: white;
   padding: 1rem 0;
 `;
 
