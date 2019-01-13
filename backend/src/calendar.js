@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const readline = require('readline');
 const { promisify } = require('util');
 
@@ -12,9 +13,8 @@ const calendar = google.calendar('v3');
 const listFn = promisify(calendar.events.list);
 
 const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
-const TOKEN_DIR = `${process.env.HOME || process.env.HOMEPATH ||
-  process.env.USERPROFILE}/.credentials/`;
-const TOKEN_PATH = `${TOKEN_DIR}radiodiodi-calendar-credentials.json`;
+const TOKEN_DIR = path.join(__dirname, '..', '.credentials');
+const TOKEN_PATH = path.join(TOKEN_DIR, 'radiodiodi-calendar-credentials.json');
 const { CALENDAR_ID } = process.env;
 const START_DATE = new Date(Date.parse('2019-04-12T00:00:00.000+03:00'));
 const END_DATE = new Date(Date.parse('2019-05-01T00:00:00.000+03:00'));
@@ -48,7 +48,7 @@ function storeToken(token) {
       throw err;
     }
   }
-  fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err, res) => {
+  fs.writeFile(TOKEN_PATH, JSON.stringify(token), (err) => {
     if (err) {
       console.error(err);
     } else {
@@ -157,7 +157,6 @@ const initCalendarReader = credentials => {
       utils.info(`Updated calendar. Fetched ${results.length} results.`);
     } catch (err) {
       utils.error('Error while authorizing calendar.');
-      console.log(err);
     }
   };
 
@@ -169,6 +168,6 @@ const initCalendarReader = credentials => {
 readFile('client_secret.json')
   .then(r => JSON.parse(r))
   .then(initCalendarReader)
-  .catch(console.log);
+  .catch(utils.error);
 
 module.exports = () => calendarData;

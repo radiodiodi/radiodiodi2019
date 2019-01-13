@@ -82,3 +82,4 @@ yarn-error.log*
 .env
 
 client_secret.json
+.credentials/

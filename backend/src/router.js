@@ -203,9 +203,7 @@ router.get('/programmes', allowAllCors, ctx => {
 router.get('/now_playing', allowAllCors, ctx => {
   const data = getCalendar();
   if (!data) {
-    ctx.throw(500, 'Internal server error.');
-    utils.error('Failed to get calendar data. Data: ');
-    console.log(data);
+    ctx.status = 500;
     return;
   }
 
