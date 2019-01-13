@@ -8,7 +8,6 @@ import Instagram from '../../common/Instagram';
 import SponsorReel from '../../common/SponsorReel';
 import Calendar from '../../calendar/Calendar';
 import Shoutbox from '../../common/Shoutbox';
-import CountdownSection from '../../common/CountdownSection';
 
 const Container = styled.div`
   display: flex;
