@@ -35,7 +35,7 @@ const Paragraph2 = Paragraph.extend`
 `;
 
 const ColumnContainer = styled.div`
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 801px) {
     margin: 0 ${p => p.margin ? '2rem' : 0} 1rem 0;
     width: 50%;
   }
