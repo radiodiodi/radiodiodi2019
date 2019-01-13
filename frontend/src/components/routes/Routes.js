@@ -12,6 +12,7 @@ import Admin from '../pages/admin/Admin';
 import Login from '../pages/admin/Login';
 import Guide from '../pages/guide/Guide';
 import Cookie from 'universal-cookie';
+import Separator from '../common/Separator';
 
 class Routes extends Component {
   constructor() {
@@ -41,6 +42,7 @@ class Routes extends Component {
       <Router>
         <Fragment>
           <Header changeLanguage={this.changeLanguage} />
+          <Separator />
           <Switch>
             <Route exact path="/" component={Frontpage} />
             <Route path="/sponsors" component={Sponsors} />

@@ -79,7 +79,6 @@ class Frontpage extends Component {
 
     return (
       <Fragment>
-        <CountdownSection />
         <Container>
           <ColumnContainer ontop>
             <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle>
