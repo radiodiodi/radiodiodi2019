@@ -36,7 +36,6 @@ injectGlobal`
         box-sizing: border-box;
         background-color: ${theme.color.white100};
         color: ${theme.color.grey100};
-        height: 100vh;
     }
     *,
     *:before,
