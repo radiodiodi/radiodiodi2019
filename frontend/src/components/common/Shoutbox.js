@@ -210,7 +210,9 @@ class Shoutbox extends Component {
     this.connection.onclose = () => setTimeout(this.connect, 1000);
 
     const username = this.cookie.get('username') || '';
-    this.username.value = username;
+    if (this.username) {
+      this.username.value = username;
+    }
   }
 
   componentDidMount() {
