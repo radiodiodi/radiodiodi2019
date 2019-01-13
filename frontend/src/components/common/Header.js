@@ -1,29 +1,30 @@
-import React, { Fragment, PureComponent } from 'react';
+import React, { Fragment, PureComponent, Component } from 'react';
 import styled from 'styled-components';
-import logo from '../../svg/logo_white.svg';
-import mascot from '../../svg/mascot.svg';
 import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 
 const HeaderContainer = styled.header`
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+`;
+
+const HeaderGraphicsContainer = styled.div`
   padding: 3rem 0 1rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
 
-  border-bottom: solid;
-  border-width: 4px;
-  border-color: ${p => p.theme.color.pink50};
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    padding: 1rem 0 1rem;
-  }
+const HeaderNavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 const Logo = styled.img`
-  max-height: 3rem;
+  max-height: 270px;
   width: auto;
 
   @media screen and (max-width: 600px) {
@@ -41,50 +42,48 @@ const SocialMediaLink = styled.a`
 `;
 
 const SocialMediaContainer = styled.span`
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
   @media screen and (max-width: 600px) {
     order: 99;
     margin-top: 1rem;
   }
 
   @media screen and (min-width: 600px) {
-    margin-left: auto;
-    margin-right: 2rem;
+    margin-left: 0;
+    margin-right: auto;
   }
 `;
 
-class Banner extends PureComponent {
+class Header extends Component {
   render() {
     return (
       <HeaderContainer>
-        <Link to="/">
-          <Logo src={mascot} />
-        </Link>
-        <SocialMediaContainer>
-          <SocialMediaLink target="_blank" float href="https://instagram.com/radiodiodi">
-            <SocialMediaButton className="fab fa-instagram" />
-          </SocialMediaLink>
-          <SocialMediaLink target="_blank" href="https://www.facebook.com/radiodiodi">
-            <SocialMediaButton className="fab fa-facebook" />
-          </SocialMediaLink>
-          <SocialMediaLink target="_blank" href="https://t.me/radiodiodioffseason">
-            <SocialMediaButton className="fab fa-telegram" />
-          </SocialMediaLink>
-        </SocialMediaContainer>
-        <Link to="/">
-          <Logo src={logo} />
-        </Link>
+        <HeaderGraphicsContainer>
+          <Link to="/">
+            <Logo src="https://static.radiodiodi.fi/img/2019/logo_neg.png" />
+          </Link>
+        </HeaderGraphicsContainer>
+        <HeaderNavContainer>
+          <SocialMediaContainer>
+            <SocialMediaLink target="_blank" float href="https://instagram.com/radiodiodi">
+              <SocialMediaButton className="fab fa-instagram" />
+            </SocialMediaLink>
+            <SocialMediaLink target="_blank" href="https://www.facebook.com/radiodiodi">
+              <SocialMediaButton className="fab fa-facebook" />
+            </SocialMediaLink>
+            <SocialMediaLink target="_blank" href="https://t.me/radiodiodioffseason">
+              <SocialMediaButton className="fab fa-telegram" />
+            </SocialMediaLink>
+          </SocialMediaContainer>
+          <Navigation changeLanguage={this.props.changeLanguage} />
+        </HeaderNavContainer>
+        <Navigation changeLanguage={this.props.changeLanguage} mobile />
       </HeaderContainer>
     );
   }
-}
-
-function Header(props) {
-  return (
-    <Fragment>
-      <Banner />
-      <Navigation changeLanguage={props.changeLanguage} />
-    </Fragment>
-  );
 }
 
 export default Header;
