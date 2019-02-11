@@ -84,7 +84,8 @@ class Navigation extends Component {
           <Link to="/guide">{trans.oto}</Link>
           <Link to="/sponsors">{trans.forbusinesses}</Link>
           <Link to="/library">{trans.musiclibrary}</Link>
-          <Language onClick={changeLanguage}>{trans.changelang}</Language>
+          <Link to="/english">{trans.english}</Link>
+          {/* <Language onClick={changeLanguage}>{trans.changelang}</Language> */}
         </Menu>
       </Rectangle>
     );

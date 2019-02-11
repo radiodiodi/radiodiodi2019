@@ -90,6 +90,7 @@ const common = {
                          eli keskeltä Otaniemeä!<br><br>Tule studioomme tutustumaan otaniemeläisen wappuradion toimintaan
                          ja tekemään itse omannäköistäsi ohjelmaa! Radiolähetys on kuultavissa verkossa osoitteessa
                          <a href="https://radiodiodi.fi">radiodiodi.fi</a>.&nbsp;📻`,
+    english: 'In English',
   },
   en: {
     frontpage: 'Front page',

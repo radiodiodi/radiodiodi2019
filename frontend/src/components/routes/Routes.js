@@ -13,6 +13,7 @@ import Login from '../pages/admin/Login';
 import Guide from '../pages/guide/Guide';
 import Cookie from 'universal-cookie';
 import Separator from '../common/Separator';
+import English from '../pages/english/English';
 
 class Routes extends Component {
   constructor() {
@@ -51,6 +52,7 @@ class Routes extends Component {
             <Route path="/admin" component={Admin} />
             <Route path="/login" component={Login} />
             <Route path="/library" component={Library} />
+            <Route path="/english" component={English} />
             <Route component={() => <h1>404</h1>} />
           </Switch>
           <Footer />
