@@ -63,7 +63,7 @@ class Header extends Component {
       <HeaderContainer>
         <HeaderGraphicsContainer>
           <Link to="/">
-            <Logo src="https://static.radiodiodi.fi/img/2019/logo_neg.png" />
+            <Logo src="https://static.radiodiodi.fi/img/2019/logo.png" />
           </Link>
         </HeaderGraphicsContainer>
         <HeaderNavContainer>
