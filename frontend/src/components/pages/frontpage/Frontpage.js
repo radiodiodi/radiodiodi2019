@@ -81,19 +81,17 @@ class Frontpage extends Component {
       <Fragment>
         <Container>
           <ColumnContainer ontop>
-            <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle>
-            <Shoutbox />
-            <Title>{trans.otasuunnistusheading}</Title>
-            <Paragraph2 dangerouslySetInnerHTML={{ __html: trans.otasuunnistuspromo }} />
+            {/* <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle> */}
+            {/* <Shoutbox /> */}
+            <Title>{trans.whatisheading}</Title>
+            {trans.whatis}
           </ColumnContainer>
           <ColumnContainer>
             <Paragraph margin>
               <Calendar oneDayPreview />
-              <Title>{trans.whatisheading}</Title>
-              {trans.whatis}
             </Paragraph>
             <SponsorReel interval={sponsorInterval} />
-            <Player />
+            {/* <Player /> */}
           </ColumnContainer>
         </Container>
         <Calendar />
