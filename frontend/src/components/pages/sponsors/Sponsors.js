@@ -101,10 +101,10 @@ class Sponsors extends Component {
 
     return (
       <Fragment>
-        <Quote>{ trans.ancientromansquote }</Quote>
-        <Source>— Radiodiodi</Source>
+        {/* <Quote>{ trans.ancientromansquote }</Quote>
+        <Source>— Radiodiodi</Source> */}
 
-        <Title>Wappuradio</Title>
+        {/* <Title>Wappuradio</Title>
         <Paragraph>Radiodiodi on Otaniemestä ponnistava wappuradio. Toimintamme pääpiste on kahden viikon pituinen radio-ohjelma huhtikuun puoliltavälin aina wappuaattoon asti. Lähetyksemme tuotetaan Otaniemessä, Alvarin aukiolla sijaitsevasta väliaikaisesta konttistudiosta.</Paragraph>
         <Paragraph>Radio-ohjelma tekevät vapaaehtoiset Aallon opiskelijat ja ohjelma onkin yleensä sen mukaista. Toimituksella ei ole ohjelman sisällöstä etukäteen tietoa - me luomme puitteet toiminnalle mutta ohjelmaa on täysin muiden käsissä.</Paragraph>
         <Paragraph>Teemme tätä yhteisön vuoksi; haluamme luoda kaikille riemukkaan wapputunnelman!</Paragraph>
@@ -113,13 +113,17 @@ class Sponsors extends Component {
         <Paragraph>Pääkohderyhmämme on Aalto-yliopiston nykyiset ja jo valmistuneet opiskelijat. Kauttamme tavoittaa parhaiten niin nuoret kuluttajat kuin rekryttävätkin. Tätä yleisöä et saa yhtenäisenä kuuntelijakuntana mistään muualta.</Paragraph>
         <Paragraph>Kuulumme kuitenkin koko pääkaupunkiseudulle FM taajuuksilla ja koko kuuluvuusalueellamme asuukin yhteensä yli miljoona ihmistä. Vaikka ohjelmaa tehdäänkin opiskelijat mielessä, on kuuntelijakuntamme tätä laajempaa.</Paragraph>
         <Paragraph>Kuuntelijoidemme lisäksi tavoitamme kaikki Radiodiodiin ohjemaa tekevät Aallon opiskelijat suoraan lähetyskontilla sekä erinäisissä koulutuksissa.</Paragraph>
-        <Paragraph><i>Yleisömme odottaa erilaista sisältöä – emme edes pyri olemaan perinteinen radiokanava!</i></Paragraph>
+        <Paragraph><i>Yleisömme odottaa erilaista sisältöä – emme edes pyri olemaan perinteinen radiokanava!</i></Paragraph> */}
 
-        <Title>Mitä meillä on tarjolla yrityksille?</Title>
+        <Title>Mitä meillä on tarjota yrityksille?</Title>
+        <Paragraph>Jotta Suomen nopein kuulotelevisio voitaisiin aistia, tarvitaan ensin rahaa ja papereiden pyörittelyä.</Paragraph>
+        <Paragraph>Radiodiodi tarjoaa yhteistyökumppaneilleen mahdollisuuden tavoittaa koko pääkaupunkiseudun opiskelijat ja vastavalmistuneet radioaalloilla, sekä koko Suomi netin välityksellä. Pop-up-studiomme sijaitsee Otaniemessä, Aalto-yliopiston kymmenien tuhansien opiskelijoiden ja työntekijöiden keskellä. Näymme opiskelijatapahtumissa ympäri vuoden ja tarjoamme pitkäaikaisen yhteistyökumppanuuden. </Paragraph>
+        <Paragraph>Yhteistyön laajuudesta riippuen, voimme tarjota mm. seuraavaa:</Paragraph>
 
         <ColumnContainer>
           <Column>
-          <h4>Lyhyitä mainosspotteja ja yhteisohjelmia</h4>
+          <h4>Ainutlaatuisia opiskelijoihin vetoavia wappuradiomainoksia
+ ja yhteisohjelmia</h4>
           <List>
             <li>Tarjoamme n. puolen minuutin pituisia radiomainoksia</li>
             <li>Tuotamme mainosspotit huomioiden sekä teidän toiveenne, että yleisömme odotukset</li>
@@ -129,7 +133,7 @@ class Sponsors extends Component {
           <Column>
           <h4>Näkyvyyttä ja tapahtumia</h4>
           <List>
-            <li>Logo verkossa ja julisteissamme</li>
+            <li>Logopaikka nettisivuille, bannereihin ja mainoksiin</li>
             <li>Räätälöityjä somepostauksia</li>
             <li>Näkyvyyttä keskellä Otaniemen wappua lähetyskonteillamme</li>
             <li>Myös ohjelmantekijöiden erinäisiin tapahtumiin on mahdollista päästä mukaan </li>
@@ -137,6 +141,10 @@ class Sponsors extends Component {
           </Column>
         </ColumnContainer>
 
+        <Paragraph centered>Kiinnostuitko? Ota yhteyttä!</Paragraph>
+        <Paragraph centered>
+          <Link href="mailto:yrityssuhteet@radiodiodi.fi">yrityssuhteet@radiodiodi.fi</Link>
+          </Paragraph>
         <Title>Aiempien vuosien mainoksia</Title>
 
         <AudioPlayerContainer>
@@ -162,7 +170,7 @@ class Sponsors extends Component {
           </AudioPlayer>
         </AudioPlayerContainer>
 
-        <ContrastBox>
+        {/* <ContrastBox>
           <Paragraph centered>
           Haluatteko olla osa Otaniemen wappua?
           </Paragraph>
@@ -178,7 +186,7 @@ class Sponsors extends Component {
           <Paragraph centered>
             +358 45 639 0790
           </Paragraph>
-        </ContrastBox>
+        </ContrastBox> */}
 
       </Fragment>
     );

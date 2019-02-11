@@ -5,7 +5,7 @@ const common = {
   fi: {
     frontpage: 'Etusivu',
     changelang: 'In English',
-    forbusinesses: 'Yrityksille',
+    forbusinesses: 'Yhteistyökumppaniksi?',
     timetoregistration: 'Ohjelmantekijöiden ilmoittautuminen alkaa',
     registrationdate: '5.3. klo 9!',
     instagramfeed: '#Instagram-feed',
