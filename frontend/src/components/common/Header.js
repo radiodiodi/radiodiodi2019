@@ -37,7 +37,7 @@ const SocialMediaButton = styled.i`
 `;
 
 const SocialMediaLink = styled.a`
-  color: ${p => p.theme.color.blue75};
+  color: ${p => p.theme.color.blue100};
   margin: 0 0.5rem 0;
 `;
 

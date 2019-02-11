@@ -34,8 +34,8 @@ injectGlobal`
     }
     html {
         box-sizing: border-box;
-        background-color: ${theme.color.white100};
-        color: ${theme.color.grey100};
+        background-color: ${theme.color.grey100};
+        color: ${theme.color.white100};
     }
     *,
     *:before,
@@ -46,14 +46,14 @@ injectGlobal`
         line-height: 2rem;
         font-family: ${theme.font.gothic};
         font-weight: bolder;
-        color: ${theme.color.grey100};
+        color: ${theme.color.white100};
     }
     h3 {
         font-size: 1.5rem;
-        color: ${theme.color.grey100};
+        color: ${theme.color.white100};
     }
     a {
-      color: ${theme.color.grey75};
+      color: ${theme.color.blue100};
       text-decoration: none;
       cursor: pointer;
 
