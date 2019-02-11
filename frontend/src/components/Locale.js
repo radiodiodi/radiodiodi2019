@@ -20,13 +20,6 @@ const common = {
     whatisheading: 'Mikä on Radiodiodi?',
     instagramimage: 'Instagram-kuva',
     ancientromansquote: '“Suosittelen kokemuksena“',
-    editorinchief: 'Päätoimittaja',
-    itdirector: 'IT-päällikko',
-    executivedirector: 'Toimituspäällikkö',
-    headofstudio: 'Studiopäällikkö',
-    socialmediamanager: 'Some-vastaava',
-    broadcastengineer: 'Lähetysketjupäällikkö',
-    corporaterelationsmanager: 'Yrityssuhdevastaava',
     incollaboration: 'Yhteistyössä',
     radioprogramheading: 'Ohjelmantekijäksi?',
     radioprogramparagraph1:
@@ -96,7 +89,19 @@ const common = {
               <a href="mailto:toimitus@radiodiodi.fi">toimitus@radiodiodi.fi</a><br>
               <b>Yritysyhteistyö</b><br>
               <a href="mailto:yrityssuhteet@radiodiodi.fi">yrityssuhteet@radiodiodi.fi</a>`,
-    imagegalleryheading: 'Taustatiimi 2019'
+    imagegalleryheading: 'Taustatiimi 2019',
+    artdirector: 'Graafikko',
+    webdirector: 'Web-vastaava',
+    editorinchief: 'Päätoimittaja',
+    itdirector: 'IT-vastaava',
+    executivedirector: 'Toimituspäällikkö',
+    elderman: 'Oltermanni',
+    headofstudio: 'Studiopäällikkö',
+    socialmediamanager: 'Some-vastaava',
+    marketingmanager: 'Markkinointivastaava',
+    broadcastengineer: 'Lähetysketjupäällikkö',
+    constructionengineer: 'Rakennusmestari',
+    corporaterelationsmanager: 'Yrityssuhdevastaava',
   },
   en: {
     frontpage: 'Front page',
@@ -115,13 +120,6 @@ const common = {
     whatisheading: 'Radiodiodi? 105,8 MHz!',
     instagramimage: 'Instagram image',
     ancientromansquote: '“Important quote here“',
-    editorinchief: 'Editor in Chief',
-    itdirector: 'IT Director',
-    executivedirector: 'Executive Director',
-    headofstudio: 'Head of Studio',
-    socialmediamanager: 'Social Media Manager',
-    broadcastengineer: 'Broadcast Engineer',
-    corporaterelationsmanager: 'Corporate Relations Manager',
     incollaboration: 'In collaboration with',
     radioprogramheading: 'Ready to become a radio host?',
     radioprogramparagraph1:
@@ -183,6 +181,18 @@ const common = {
     otasuunnistuspromo: `Radiodiodi will broadcast a radio show from the center of Otaniemi during Otasuunnistus on 4.9. and 6.9.
                          <br><br>Come meet the team and make a programme of your own! The broadcast can be heard online at
                          <a href="https://radiodiodi.fi">radiodiodi.fi</a>. 📻`,
+    artdirector: 'Art Designer',
+    webdirector: 'Web Director',
+    editorinchief: 'Editor in Chief',
+    itdirector: 'IT Director',
+    executivedirector: 'Executive Director',
+    elderman: 'Elderman',
+    headofstudio: 'Head of Studio',
+    socialmediamanager: 'Social Media Manager',
+    marketingmanager: 'Marketing Manager',
+    broadcastengineer: 'Broadcast Engineer',
+    constructionengineer: 'Construction Engineer',
+    corporaterelationsmanager: 'Corporate Relations Manager',
   }
 };
 
