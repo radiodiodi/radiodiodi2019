@@ -37,11 +37,12 @@ const Paragraph2 = Paragraph.extend`
 const ColumnContainer = styled.div`
   @media screen and (min-width: 801px) {
     margin: 0 ${p => p.margin ? '2rem' : 0} 1rem 0;
-    width: 50%;
+    width: ${p => p.size || '50%'};
   }
 
   @media screen and (max-width: 800px) {
     order: ${p => p.ontop ? '-1' : null};
+    margin-bottom: 2rem;
   }
 
   display: flex;
@@ -80,14 +81,16 @@ class Frontpage extends Component {
     return (
       <Fragment>
         <Container>
-          <ColumnContainer ontop>
+          <ColumnContainer ontop size="70%">
             {/* <ShoutboxTitle>{trans.shoutbox}</ShoutboxTitle> */}
             {/* <Shoutbox /> */}
-            <Title>{trans.whatisheading}</Title>
-            {trans.whatis}
-          </ColumnContainer>
-          <ColumnContainer>
             <Paragraph margin>
+              <Title>{trans.whatisheading}</Title>
+              {trans.whatis}
+            </Paragraph>
+          </ColumnContainer>
+          <ColumnContainer size="30%">
+            <Paragraph>
               {/* <Calendar oneDayPreview /> */}
               <Title>{trans.contactheading}</Title>
               <Paragraph2 dangerouslySetInnerHTML={{__html: trans.contact}} />

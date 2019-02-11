@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import plus from '../../../images/plus.png';
+// import plus from '../../../images/plus.png';
 import Proposition from './Proposition';
 
 const Container = styled.div`
@@ -47,7 +47,7 @@ class PropositionPicker extends Component {
   renderAddButton() {
     return (
       <AddButtonRow onClick={ this.onAddProposition }>
-        <PlusIcon src={ plus } />
+        {/* <PlusIcon src={ plus } /> */}
         <div>Lisää ehdotus</div>
       </AddButtonRow>
     );

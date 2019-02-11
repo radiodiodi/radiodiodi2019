@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { shortenText } from '../../utils'
-import placeholderImg from '../../images/placeholder_dark.svg'
+// import placeholderImg from '../../images/placeholder_dark.svg'
 import PropTypes from 'prop-types';
 import dateFormat from 'dateformat';
 
@@ -38,7 +38,6 @@ const ImagePlaceholder = styled.div`
   height: 150px;
   width: 150px;
 
-  background-image: url(${placeholderImg});
   background-size: cover;
   margin-left: 1rem;
 

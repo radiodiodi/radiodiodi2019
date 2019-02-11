@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import shuffle from 'shuffle-array';
 import FadeImage from './FadeImage';
 
-import futurice from './../../images/futurice.svg';
-import vincit from './../../images/vincit.png';
-import abb from './../../images/abb.png';
-import genelec from './../../images/genelec.png';
-import srv from './../../images/srv.png';
-import btw from './../../images/btw.png';
+// import futurice from './../../images/futurice.svg';
+// import vincit from './../../images/vincit.png';
+// import abb from './../../images/abb.png';
+// import genelec from './../../images/genelec.png';
+// import srv from './../../images/srv.png';
+// import btw from './../../images/btw.png';
 
 const Container = styled.div`
   display: flex;
@@ -46,12 +46,12 @@ class SponsorReel extends Component {
       current: 0,
       counter: 0,
       images: shuffle([
-        futurice,
-        vincit,
-        abb,
-        genelec,
-        srv,
-        btw,
+        // futurice,
+        // vincit,
+        // abb,
+        // genelec,
+        // srv,
+        // btw,
       ]),
     };
 
@@ -90,9 +90,9 @@ class SponsorReel extends Component {
       <Container>
         <Title>{ trans.incollaboration }</Title>
         <ImageContainer>
-          <ReelImage
+          {/* <ReelImage
             src={ image }
-          />
+          /> */}
         </ImageContainer>
       </Container>
     );

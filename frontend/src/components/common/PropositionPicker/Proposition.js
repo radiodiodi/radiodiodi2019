@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CalendarWidget from './CalendarWidget';
 import DatePicker from './DatePicker';
 import TimePicker from './TimePicker';
-import cross from '../../../images/cross.png';
+// import cross from '../../../images/cross.png';
 
 const PropositionRow = styled.span`
   padding: 0.5rem;
@@ -111,7 +111,7 @@ class Proposition extends Component {
             <Label>Viimeinen sopiva lopetuskellonaika</Label>
             <TimePicker onChange={this.onEndTimeChange} time={ endTime } />
           </Column>
-          <RemoveButton onClick={this.remove} src={ cross } />
+          {/* <RemoveButton onClick={this.remove} src={ cross } /> */}
         </PropositionRow>
         <CalendarWidget onDateSelect={this.onDateSelect} show={showCalendar} />
       </Fragment>

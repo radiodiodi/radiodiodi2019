@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import vincit from '../../../audio/vincit.wav';
-import srv from '../../../audio/srv.wav';
-import gofore from '../../../audio/gofore.wav';
+// import vincit from '../../../audio/vincit.wav';
+// import srv from '../../../audio/srv.wav';
+// import gofore from '../../../audio/gofore.wav';
 
 const Quote = styled.p`
     text-align: center;
@@ -148,7 +148,7 @@ class Sponsors extends Component {
         <Title>Aiempien vuosien mainoksia</Title>
 
         <AudioPlayerContainer>
-          <AudioPlayer>
+          {/* <AudioPlayer>
             <AudioPlayerLabel>Vincit</AudioPlayerLabel>
             <audio controls>
               <source src={ vincit } type="audio/wav" />
@@ -161,13 +161,13 @@ class Sponsors extends Component {
               <source src={ srv } type="audio/wav" />
             </audio>
           </AudioPlayer>
-        
+
           <AudioPlayer>
             <AudioPlayerLabel>Gofore</AudioPlayerLabel>
             <audio controls>
               <source src={ gofore } type="audio/wav" />
             </audio>
-          </AudioPlayer>
+          </AudioPlayer> */}
         </AudioPlayerContainer>
 
         {/* <ContrastBox>
