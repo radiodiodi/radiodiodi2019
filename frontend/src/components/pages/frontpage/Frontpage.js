@@ -88,18 +88,21 @@ class Frontpage extends Component {
           </ColumnContainer>
           <ColumnContainer>
             <Paragraph margin>
-              <Calendar oneDayPreview />
+              {/* <Calendar oneDayPreview /> */}
+              <Title>{trans.contactheading}</Title>
+              <Paragraph2 dangerouslySetInnerHTML={{__html: trans.contact}} />
             </Paragraph>
-            <SponsorReel interval={sponsorInterval} />
+            {/* <SponsorReel interval={sponsorInterval} /> */}
             {/* <Player /> */}
           </ColumnContainer>
         </Container>
         <Calendar />
-        <ContentRow>
+        {/* <ContentRow>
           <Title>{trans.recruitheading}</Title>
           <Paragraph2 dangerouslySetInnerHTML={{__html: trans.recruitparagraph1}} />
-        </ContentRow>
+        </ContentRow> */}
         <ContentRow>
+          <Title>{trans.imagegalleryheading}</Title>
           <ImageGallery />
         </ContentRow>
         <Instagram />

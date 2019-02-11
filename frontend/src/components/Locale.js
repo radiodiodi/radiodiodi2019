@@ -17,7 +17,7 @@ const common = {
     Projektiin osallistuu joka vuosi satoja vapaaehtoisia taustatyön muodossa ja ohjelmaakin tulee vuosittain tekemään 
     kahden lähetysviikon aikana yli 100 vapaaehtoista. Radiota kuuntelee lähetyksen aikana koko pääkaupunkiseutu 
     ja lasketulla kuuluvuusalueella asuu noin 400 000 ihmistä!`,
-    whatisheading: 'Radiodiodi? 105,8 MHz!',
+    whatisheading: 'Mikä on Radiodiodi?',
     instagramimage: 'Instagram-kuva',
     ancientromansquote: '“Suosittelen kokemuksena“',
     editorinchief: 'Päätoimittaja',
@@ -91,6 +91,12 @@ const common = {
                          ja tekemään itse omannäköistäsi ohjelmaa! Radiolähetys on kuultavissa verkossa osoitteessa
                          <a href="https://radiodiodi.fi">radiodiodi.fi</a>.&nbsp;📻`,
     english: 'In English',
+    contactheading: 'Ota yhteyttä',
+    contact: `<b>Toimitus</b><br>
+              <a href="mailto:toimitus@radiodiodi.fi">toimitus@radiodiodi.fi</a><br>
+              <b>Yritysyhteistyö</b><br>
+              <a href="mailto:yrityssuhteet@radiodiodi.fi">yrityssuhteet@radiodiodi.fi</a>`,
+    imagegalleryheading: 'Taustatiimi 2019'
   },
   en: {
     frontpage: 'Front page',

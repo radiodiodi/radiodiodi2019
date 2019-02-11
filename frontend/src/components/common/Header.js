@@ -78,9 +78,9 @@ class Header extends Component {
               <SocialMediaButton className="fab fa-telegram" />
             </SocialMediaLink>
           </SocialMediaContainer>
-          <Navigation changeLanguage={this.props.changeLanguage} />
+          <Navigation />
         </HeaderNavContainer>
-        <Navigation changeLanguage={this.props.changeLanguage} mobile />
+        <Navigation mobile />
       </HeaderContainer>
     );
   }
